@@ -1,0 +1,22 @@
+body {
+    font-family: "TT-Interphases-normal";
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "TT-Interphases-bold";
+    margin: 0;
+}
+
+.mat-grid-tile {
+    .mat-figure {
+        align-items: flex-start !important;
+        justify-content: start !important;
+        padding: 48px !important;
+    }
+}

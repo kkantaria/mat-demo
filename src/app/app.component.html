@@ -1,5 +1,5 @@
 <div>
-  <div class="header-block color-cyan">
+  <div class="header">
     <app-header-with-tag
       [header]="'Template'"
       [tag-line]="'Using custom components'"
@@ -19,7 +19,7 @@
       <mat-grid-tile>
         <div class="example-container">
           <mat-form-field appearance="outline">
-            <input matInput />
+            <input matInput placeholder="Placeholder text" />
             <button mat-button matSuffix mat-icon-button aria-label="Search">
               <mat-icon>search</mat-icon>
             </button>
@@ -54,7 +54,7 @@
         <div class="example-container">
           <mat-checkbox></mat-checkbox>
           <br />
-          <mat-checkbox [(ngModel)]="checked" value="true"></mat-checkbox>
+          <mat-checkbox value="true"></mat-checkbox>
         </div>
       </mat-grid-tile>
     </mat-grid-list>

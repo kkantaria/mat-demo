@@ -27,6 +27,9 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 /* You can add global styles to this file, and also import other style files */
 @import "./theme.scss";
+
+@import "./assets/scss/main.scss";
+
 html,
 body {
     height: 100%;

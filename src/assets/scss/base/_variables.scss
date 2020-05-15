@@ -1,0 +1,37 @@
+// Colors Palette
+
+$colors: (
+    navy: (
+        100: #061b2e,
+        50: #828c96,
+        30: #b3bac0,
+        5: #f2f3f4,
+    ),
+    royal: (
+        100: #11508d,
+        50: #87a7c6,
+        30: #b7cadc,
+        15: #dbe5ee,
+    ),
+    azure: (
+        100: #1c85eb,
+        30: #badaf9,
+        5: #f3f9fe,
+    ),
+    green: (
+        100: #2cc8a7,
+    ),
+    yellow: (
+        100: #ffc259,
+    ),
+    pink: (
+        100: #ff8082,
+    ),
+    white: (
+        100: #ffffff,
+    ),
+);
+
+@function color-palette($color, $tone: 100) {
+    @return map-get(map-get($colors, $color), $tone);
+}

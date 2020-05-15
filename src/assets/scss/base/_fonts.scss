@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "TT-Interphases-bold";
+    src: url("./assets/fonts/TTInterphases-Bold.woff2") format("woff2"),
+        url("./assets/fonts/TTInterphases-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT-Interphases-normal";
+    src: url("./assets/fonts/TTInterphases-Medium.woff2") format("woff2"),
+        url("./assets/fonts/TTInterphases-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
