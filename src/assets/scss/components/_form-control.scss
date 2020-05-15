@@ -1,8 +1,6 @@
-// .mat-form-field-type-mat-input
-mat-form-field {
-  &[appearance="outline"] {
-    min-width: 280px;
-
+// Input outline overriding
+.mat-form-field {
+  &.mat-form-field-appearance-outline {
     .mat-form-field-wrapper,
     .mat-form-field-flex {
       margin: 0;
@@ -25,9 +23,18 @@ mat-form-field {
       }
     }
 
+    .mat-form-field-outline-start {
+      border-radius: 2px 0 0 2px;
+    }
+
+    .mat-form-field-outline-end {
+      border-radius: 0 2px 2px 0;
+    }
+
     .mat-form-field-infix {
       padding: 17px 5px;
       border-top: none;
+      width: 200px;
 
       .mat-input-element {
         color: color-palette(navy, 50);
@@ -51,7 +58,7 @@ mat-form-field {
     .mat-form-field-suffix {
       top: 6px;
 
-      .mat-button {
+      .mat-icon-button {
         color: color-palette(navy, 30);
 
         .mat-ripple,
@@ -77,7 +84,7 @@ mat-form-field {
       }
 
       .mat-form-field-suffix {
-        .mat-button {
+        .mat-icon-button {
           color: color-palette(azure);
         }
       }
@@ -88,5 +95,48 @@ mat-form-field {
         background-color: color-palette(white);
       }
     }
+
+    .mat-datepicker-toggle-active {
+      .mat-icon-button {
+        color: color-palette(azure);
+      }
+    }
+  }
+}
+
+// Checkbox overriding
+.mat-checkbox {
+  .mat-checkbox-inner-container {
+    height: 24px;
+    width: 24px;
+  }
+
+  .mat-checkbox-frame {
+    border-color: color-palette(navy, 30);
+    border-width: 1px;
+  }
+
+  .mat-checkbox-ripple {
+    display: none;
+  }
+
+  &.mat-checkbox-checked .mat-checkbox-background {
+    background-color: color-palette(azure);
+  }
+}
+
+// Datepicker overridings
+.mat-calendar {
+  .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+    background-color: color-palette(navy, 5);
+    border-color: color-palette(navy, 30);
+  }
+
+  .mat-calendar-body-selected {
+    background-color: color-palette(azure);
+  }
+
+  .mat-calendar-controls {
+    margin-top: 0;
   }
 }
